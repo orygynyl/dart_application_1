@@ -56,5 +56,21 @@ default:
     print('Unknown day, check your input');
 }
  
+// change from switch to else if
+  int dayNumber = 3; 
+  if (dayNumber == 1) {
+      print('Monday: Water all seedlings.');}
+    else if (dayNumber == 2){
+      print('Tuesday: Check for pests.');}
+    else if (dayNumber == 3){
+      print('Wednesday: Apply fertilizer.');}
+    else if (dayNumber == 4){
+        print('Thursday: Inspect irrigation system.');}
+    else if (dayNumber == 5){
+      print('Friday: Record daily yields.');
+      }
+   
+
 }
+
 
