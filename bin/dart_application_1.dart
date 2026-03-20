@@ -104,13 +104,14 @@ void main() {
   double savings = 0.0;
   int weeks = 0;
 
-  //saving to buy phone
+  // Assignment 1
+  //saving to buy my dream phone phone
   while (savings < 5000) {
     savings += 500;
     weeks++;
-    print('week $weeks: the amount for this wek is $savings');
+    print('week $weeks: the amount for this week is $savings cedis');
   }
   print(
-    ' Conguratulation, the maximum money which is $savings is obtained for the phone',
+    ' Congratulations, the maximum money which is $savings cedis is obtained for your dream phone.',
   );
 }
