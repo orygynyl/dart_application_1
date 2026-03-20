@@ -114,4 +114,18 @@ void main() {
   print(
     ' Congratulations, the maximum money which is $savings cedis is obtained for your dream phone.',
   );
+
+  double rainFall = 0.0;
+  int day = 0;
+
+  //Assignment 2
+  // Rainfall accumulation over a period
+  while (rainFall <= 60) {
+    rainFall += 5;
+    day += 3;
+    print('day $day: The rain acculated for today is $rainFall ml');
+  }
+  print(
+    'The rain accumulated for the past $day days is enough for farmers to start farming.It shows that, there is good season ahead.',
+  );
 }
