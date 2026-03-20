@@ -100,4 +100,17 @@ void main() {
     print('day $days: Height = ${plantHeight}cm');
   }
   print('plant is fully grown in ${days} days');
+
+  double savings = 0.0;
+  int weeks = 0;
+
+  //saving to buy phone
+  while (savings < 5000) {
+    savings += 500;
+    weeks++;
+    print('week $weeks: the amount for this wek is $savings');
+  }
+  print(
+    ' Conguratulation, the maximum money which is $savings is obtained for the phone',
+  );
 }
