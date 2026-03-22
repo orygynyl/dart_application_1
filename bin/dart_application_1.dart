@@ -86,7 +86,7 @@ void main() {
     waterLevel -= 10;
     userCycle++;
 
-    print('cycle $userCycle: water level is ${waterLevel}%');
+    print('cycle $userCycle: water level is $waterLevel %');
   }
   print('water is low, refill needed');
 
@@ -99,13 +99,12 @@ void main() {
     days++;
     print('day $days: Height = ${plantHeight}cm');
   }
-  print('plant is fully grown in ${days} days');
-
-  double savings = 0.0;
-  int weeks = 0;
+  print('plant is fully grown in $days days');
 
   // Assignment 1
   //saving to buy my dream phone phone
+  double savings = 0.0;
+  int weeks = 0;
   while (savings < 5000) {
     savings += 500;
     weeks++;
@@ -115,11 +114,10 @@ void main() {
     ' Congratulations, the maximum money which is $savings cedis is obtained for your dream phone.',
   );
 
-  double rainFall = 0.0;
-  int day = 0;
-
   //Assignment 2
   // Rainfall accumulation over a period
+  double rainFall = 0.0;
+  int day = 0;
   while (rainFall <= 60) {
     rainFall += 5;
     day += 3;
@@ -128,4 +126,21 @@ void main() {
   print(
     'The rain accumulated for the past $day days is enough for farmers to start farming.It shows that, there is good season ahead.',
   );
+
+  // Assignment 3
+  // soil moisture irrigation
+  double soilMoisture = 20;
+  int cycles = 0;
+  while (soilMoisture < 60) {
+    {
+      soilMoisture += 10;
+      cycles++;
+      if (soilMoisture >= 50) {
+        print('Cycle: $cycles: Almost optimal moisture $soilMoisture %');
+      } else {
+        print('Cycle: $cycles: Moisture= $soilMoisture %');
+      }
+    }
+  }
+  print('Irrigation complete!');
 }
