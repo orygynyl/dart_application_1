@@ -111,7 +111,7 @@ void main() {
     print('week $weeks: the amount for this week is $savings cedis');
   }
   print(
-    ' Congratulations, the maximum money which is $savings cedis is obtained for your dream phone.',
+    ' Congratulations, the maximum money which is $savings cedis is obtained for your dream phone in $weeks weeks.',
   );
 
   //Assignment 2
@@ -132,15 +132,27 @@ void main() {
   double soilMoisture = 20;
   int cycles = 0;
   while (soilMoisture < 60) {
-    {
-      soilMoisture += 10;
-      cycles++;
-      if (soilMoisture >= 50) {
-        print('Cycle: $cycles: Almost optimal moisture $soilMoisture %');
-      } else {
-        print('Cycle: $cycles: Moisture= $soilMoisture %');
-      }
+    soilMoisture += 10;
+    cycles++;
+    if (soilMoisture >= 50) {
+      print('Cycle: $cycles: Almost optimal moisture $soilMoisture %');
+    } else {
+      print('Cycle: $cycles: Moisture= $soilMoisture %');
     }
   }
   print('Irrigation complete!');
+
+  //assigment 4
+  //Rate limit
+  int maximumAttempt = 6;
+  int numberOfAttempt = 0;
+  while (maximumAttempt < 5) {
+    maximumAttempt--;
+    numberOfAttempt++;
+    if (numberOfAttempt >= 5) {
+      print('you have exceeded you maximum entry, try again after one hour');
+    } else {
+      print('wrong entry, try again');
+    }
+  }
 }
